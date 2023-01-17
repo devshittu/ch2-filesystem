@@ -50,10 +50,20 @@ $ node write-simple.js
 ```shell
 $ node read-simple.js
 ```
-
-
-## 
-
+### Creating Read and Write Streams
+The cat.js uses a file stream to pipe a file’s data to standard output:
 ```shell
+$ chmod +x cat.js
+$ ./cat.js target.txt
+```
+You can also listen for data events from the file stream instead of calling pipe(). The following program called read-stream.js does this:
+```shell 
+read-stream.js no-such-file
 $ node 
+```
+Example of how to read a file using the readFileSync() method:
+```js
+const fs = require('fs');
+const data = fs.readFileSync('target.txt');
+process.stdout.write(data.toString());
 ```
