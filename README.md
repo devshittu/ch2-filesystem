@@ -14,12 +14,12 @@ Run launch the watcher program using node, like so:
 $ node watcher.js
 ```
 
-##Reading Command-Line Arguments
+## Reading Command-Line Arguments
 ```shell
 $ node watcher-argv.js target.txt
 ```
 
-##Spawning a Child Process
+## Spawning a Child Process
 
 Enhancing our file-watching example program even further by having it spawn a child process in response to a change.
 
@@ -28,7 +28,20 @@ $ node watcher-spawn.js target.txt
 ```
 
 
+## Capturing Data from an EventEmitter
+Sometimes you’ll want to capture data from a stream, rather than just piping it forward. Let’s see how to do that in capturing data from an EventEmitter
 
+```shell
+$ node watcher-spawn-parse.js target.txt
+```
+
+## 
+
+```shell
+$ node 
+```
+
+## 
 
 ```shell
 $ node 
