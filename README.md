@@ -18,3 +18,18 @@ $ node watcher.js
 ```shell
 $ node watcher-argv.js target.txt
 ```
+
+##Spawning a Child Process
+
+Enhancing our file-watching example program even further by having it spawn a child process in response to a change.
+
+```shell
+$ node watcher-spawn.js target.txt
+```
+
+
+
+
+```shell
+$ node 
+```
